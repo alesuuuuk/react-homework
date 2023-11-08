@@ -1,4 +1,8 @@
-
+.i__dont_know{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .header {
     padding: 0px;
@@ -7,12 +11,7 @@
 
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    
     max-width: 1500px;
     display: flex;
     justify-content: space-evenly;
@@ -25,6 +24,7 @@
     margin-right: 10px;
     font-weight: 900;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .nav {
@@ -92,6 +92,6 @@
 }
 
 .cartAndFavourite__icon{
-
+    margin: 12px;
+    cursor: pointer;
 }
-

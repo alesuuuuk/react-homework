@@ -6,3 +6,7 @@ body{
   line-height: normal;
   font-style: normal;
 }
+
+a{
+  text-decoration: none;
+}

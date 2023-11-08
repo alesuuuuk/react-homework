@@ -1,7 +1,11 @@
 import React from 'react';
-// import style
 import s from './Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+// import icons
+import ic_search from '@/assets/icons/header/Search.svg';
+import ic_heart from '@/assets/icons/header/Heart.svg';
+import ic_cart from '@/assets/icons/header/Buy.svg';
 
 
 const header = () => {
@@ -9,7 +13,7 @@ const header = () => {
   return (
     <div className={s.i__dont_know}>
       <header className={s.header}>
-      <div className={s.logo}>Logo</div>
+      <div className={s.logo}><Link href='/'>Logo</Link></div>
       <div className={s.search}>
         <input type="search"/>
       </div>
@@ -25,7 +29,7 @@ const header = () => {
             </select>
           </li>
           <li>
-            <Link className={s.nav__item} href='#'>Про нас</Link>
+            <Link className={s.nav__item} href='/about'>Про нас</Link>
           </li>
           <li>
             <Link className={s.nav__item} href='#'>Контакти</Link>
@@ -33,7 +37,7 @@ const header = () => {
           <li>
           <select className={s.select}>
             <option value="UA">UA</option>
-            <option value="Pirate">Pirate</option>
+            {/* <option value="Pirate">Pirate</option> */}
             <option value="EN">EN</option>
           </select>
           </li>
@@ -41,8 +45,9 @@ const header = () => {
           <li>
 
           <div className={s.cartAndFavourite}>
-              <img className={s.cartAndFavourite__icon} src="#" alt="favourite" />
-              <img className={s.cartAndFavourite__icon} src="#" alt="cart" />
+              <Image className={s.cartAndFavourite__icon} src={ic_heart} width={25} height={25} alt='favourite'></Image>
+              <Image className={s.cartAndFavourite__icon} src={ic_cart} width={25} height={25} alt='cart'></Image>
+
               </div>
           </li>
 
