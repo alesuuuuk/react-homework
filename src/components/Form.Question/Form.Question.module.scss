@@ -1,0 +1,14 @@
+.form__input {
+  width: 50%;
+  
+
+  &_item {
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: rgba(165, 165, 165, 0.8);
+    
+  }
+}

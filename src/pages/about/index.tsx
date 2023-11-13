@@ -1,6 +1,14 @@
 import React from 'react'
 // import style
 import s from './About.module.css'
+import Image from 'next/image'
+// import icons
+import hrywnia from "@/assets/icons/about/hryiwnia.svg"
+import folder from "@/assets/icons/about/folder.svg"
+import trust from "@/assets/icons/about/trust.svg"
+// import components
+import Form from "@/components/Form.Question"
+
 const about = () => {
     return (
         <>
@@ -18,23 +26,25 @@ const about = () => {
             </div>
             <div className={s.advantages__cards}>
                 <div className={s.card}>
-                    img
+                    <Image src={folder} alt='folder'/>
                     <h2>Сертифікована продукція</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A fugit adipisci sequi hic deleniti? Laboriosam non, facilis dignissimos autem repellendus, voluptates alias tempore repellat numquam animi nobis iste, rerum est.</p>
 
                 </div>
                 <div className={s.card}>
-                    img
+                    <Image src={hrywnia} alt='hrywnia'/>
                     <h2>Найкращі ціни</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum eius deleniti fugit quam nisi delectus perspiciatis similique mollitia. Dicta, expedita distinctio. Dignissimos, aperiam laborum. Rem corrupti repudiandae fugiat alias!</p>
                 </div>
                 <div className={s.card}>
-                    img
+                    <Image src={trust} alt='trust'/>
                     <h2>Довіра</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat optio fugiat odio dignissimos consequuntur illo voluptate amet nobis assumenda facilis iusto explicabo sequi doloremque, veniam porro voluptatum! Non, iste.</p>
                 </div>
             </div>
+            <Form />
 
+            
         </>
     )
 }
